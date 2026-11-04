@@ -85,3 +85,6 @@
 
 ## 2026-11-04 | 模型：DeepSeek-V4.1-Flash | 提示词：
 上传到master
+
+## 2026-11-04 | 模型：DeepSeek-V4.1-Flash | 提示词：
+把car-guide.html和tab,html上传到master
