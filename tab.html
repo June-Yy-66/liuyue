@@ -71,14 +71,14 @@
     .ly-tab-btn:hover {
       background: #f0f5ff;
     }
-    /* 选中状态 */
+    /* 选中状态 —— 底色变白 */
     .ly-tab-btn.ly-active {
-      color: #4a90e2; /* 选中仍为蓝色 */
+      color: #4a90e2;
       background: #fff;
       font-weight: bold;
     }
     /* 选中按钮——上划线高亮 */
-    .ly-tab-btn.ly-active::before {
+    .ly-tab-btn.ly-active::after {
       content: '';
       position: absolute;
       left: 20%;
@@ -107,10 +107,21 @@
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    /* 示例新闻条目 */
+    /* 示例新闻条目 —— 前有小点 */
     .ly-news-item {
-      padding: 10px 0;
+      padding: 10px 0 10px 16px;
       border-bottom: 1px dashed #eee;
+      position: relative;
+    }
+    .ly-news-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 14px;
+      width: 6px;
+      height: 6px;
+      background: #4a90e2;
+      border-radius: 50%;
     }
     .ly-news-item:last-child { border-bottom: none; }
     .ly-news-title { color: #4a90e2; font-weight: 500; }
